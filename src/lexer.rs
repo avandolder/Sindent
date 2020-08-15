@@ -7,6 +7,23 @@ pub(crate) struct Lexer<'src> {
   offset: usize,
 }
 
+pub(crate) struct Token<'src> {
+  span: &'src str,
+  line: usize,
+  start_offset: usize,
+  end_offset: usize,
+  kind: TokenKind<'src>,
+}
+
+pub(crate) enum TokenKind<'src> {
+  Id(&'src str),
+  Number(&'src str),
+  LBracket,
+  RBracket,
+  LParen,
+  RParen,
+}
+
 impl<'src> Iterator for Lexer<'src> {
   type Item = Token<'src>;
 

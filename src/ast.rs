@@ -4,7 +4,7 @@ pub(crate) struct Ast<'a> {
   line: usize,
   start_offset: usize,
   end_offset: usize,
-  span: 'a,
+  span: &'a str,
 }
 
 /// The kind of an AST node.
