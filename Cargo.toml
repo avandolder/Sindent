@@ -5,6 +5,7 @@ authors = ["Adam Vandolder <adam.vandolder@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+typed-arena = "2"
 
 [[bin]]
 name = "sindent"
