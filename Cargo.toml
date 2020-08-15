@@ -1,0 +1,11 @@
+[package]
+name = "sindent"
+version = "0.1.0"
+authors = ["Adam Vandolder <adam.vandolder@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "sindent"
+path = "src/main.rs"
