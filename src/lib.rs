@@ -1,3 +1,3 @@
 mod ast;
-mod lexer;
+pub mod lexer;
 mod parser;
